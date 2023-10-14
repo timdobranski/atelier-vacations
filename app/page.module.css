@@ -16,18 +16,18 @@
   height: 55%;
   background-size: auto 50%;
   transform: skewY(-25deg);
-  /* border: solid red 4px; */
   margin: .5rem;
   overflow: hidden;
-
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .img {
   position: relative;
-  background-image: url('../public/atelier-design.png');
-  background-size: cover;
+  background-image: url('../public/palms.png');
+  background-size: 110%;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   padding: 0;
   height: 90vh;
@@ -35,67 +35,59 @@
 }
 .shard1 {
   height: 45%;
-  /* background-position: 50% 10%; */
 }
 .shard2 {
   height: 60%;
-  /* background-position: 50% 10%; */
 }
 .shard3 {
   height: 58%;
-  /* background-position: 50% 30%; */
 }
 .shard4 {
   height: 75%;
-  /* background-position: 50% 40%; */
 }
 .shard5 {
   height: 65%;
-  /* background-position: 50% 50%; */
 }
 .shard6 {
   height: 58%;
-  /* background-position: 50% 60%; */
 }
 .shard7 {
   height: 62%;
-  /* background-position: 50% 70%; */
 }
 .shard8 {
   height: 45%;
-  /* background-position: 50% 80%; */
 }
 
 .shard .img {
   position: absolute;
   transform: skewY(25deg);
 }
-#shard6img{
+/* #shard6img{
   background-position: 50% 60%;
-}
+} */
 .shard1 .img {
-  background-position: 50% 10%;
+  background-position: 34vw 50%;
 }
 .shard2 .img {
-  background-position: 50% 20%;
+  background-position: 27.5vw 50%;
 }
 .shard3 .img {
-  background-position: 50% 30%;
+  background-position: 21vw 50%;
 }
 .shard4 .img {
-  background-position: 50% 40%;
+  background-position: 14.5vw 50%;
 }
 .shard5 .img {
-  background-position: 50% 50%;
+  background-position: 8vw 50%;
 }
 .shard6 .img {
-  background-position: 50% 60%;
+  background-position: 1.5vw 50%;
 }
 .shard7 .img {
-  background-position: 50% 70%;
+  background-position: -5vw 50%
 }
 .shard8 .img {
-  background-position: 50% 80%;
+  background-position: -11.5vw 50%;
 }
 
 
