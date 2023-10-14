@@ -27,6 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 1s ease-in-out;
 }
 .shard:hover {
   transform: skewY(-25deg) scale(1.1);
@@ -152,30 +153,7 @@
 
 
   }
-  /* .shard1 {
-    height: 22.5%;
-  }
-  .shard2 {
-    height: 30%;
-  }
-  .shard3 {
-    height: 29%;
-  }
-  .shard4 {
-    height: 37.5%;
-  }
-  .shard5 {
-    height: 32.5%;
-  }
-  .shard6 {
-    height: 29%;
-  }
-  .shard7 {
-    height: 31%;
-  }
-  .shard8 {
-    height: 21%;
-  } */
+
   .shard1 .img {
     background-position: 25vw 50%;
   }
