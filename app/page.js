@@ -1,8 +1,39 @@
-import Image from 'next/image';
+'use client';
+
 import styles from './page.module.css';
-import palms from '../public/palms.png';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    const imagePath = '/palms.png';
+    const img = new Image();
+    img.src = imagePath;
+
+    img.onload = () => {
+      setImageLoaded(true);
+    };
+
+    img.onerror = () => {
+      console.error(`Image at path "${imagePath}" failed to load.`);
+    };
+
+    return () => {
+      img.onload = null;
+      img.onerror = null;
+    };
+  }, []);
+
+  if (!imageLoaded) {
+    return (
+      <main className={styles.main}>
+      <h1 className={styles.loadingTitle}>LOADING...</h1>
+      </main>
+    )
+  }
+
+
   return (
     <main className={styles.main}>
       <div className={`${styles.bottomDiv}`}>
