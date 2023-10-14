@@ -2,6 +2,7 @@
 
 import styles from './page.module.css';
 import { useEffect, useState } from 'react';
+import Header from './components/Header/Header';
 
 export default function Home() {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -36,6 +37,7 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
+      <Header />
       <div className={`${styles.bottomDiv}`}>
         <div className={`${styles.shard} ${styles.shard1}`}><div className={styles.img}  alt='shard' priority='true'></div></div>
         <div className={`${styles.shard} ${styles.shard2}`}><div className={styles.img}  alt='shard' priority='true'></div></div>

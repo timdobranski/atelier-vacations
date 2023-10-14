@@ -18,24 +18,6 @@
 
   background: transparent;
 }
-#title {
-  /* position: absolute;
-  font-size: 3rem;
-  font-weight: bold;
-  color: white;
-  text-shadow: 2px 2px 2px black;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: .5rem;
-  pointer-events: none;
-  font-family: 'Future';
-  animation-name: fadeIn;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  animation-delay: 1.5s;
-  visibility: hidden; */
-
-}
 .shard {
   width: 6%;
   height: 55%;
@@ -54,7 +36,7 @@
 .img {
   position: relative;
   background-image: url('../public/palms.png');
-  background-size: 90%;
+  background-size: 1200px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   padding: 0;
