@@ -151,6 +151,7 @@
 }
 
 #title {
+  font-family: 'Future';
   animation-name: fadeIn;
   animation-duration: 3s;
   animation-fill-mode: forwards;
