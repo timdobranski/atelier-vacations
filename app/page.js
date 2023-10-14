@@ -28,7 +28,7 @@ export default function Home() {
   if (!imageLoaded) {
     return (
       <main className={styles.main}>
-      <h1 className={styles.loadingTitle}>LOADING...</h1>
+        <h1 className={styles.loadingTitle}>LOADING...</h1>
       </main>
     )
   }

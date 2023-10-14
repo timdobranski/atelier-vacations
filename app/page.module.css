@@ -4,7 +4,7 @@
   width: 100%;
   height: 100vh;
   background: transparent;
-  border: solid red 4px;
+
 }
 .bottomDiv {
   box-sizing: border-box;
@@ -17,6 +17,24 @@
   justify-content: center;
 
   background: transparent;
+}
+#title {
+  /* position: absolute;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: .5rem;
+  pointer-events: none;
+  font-family: 'Future';
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  visibility: hidden; */
+
 }
 .shard {
   width: 6%;
@@ -121,7 +139,7 @@
   animation-name: slideInUp;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-delay: .5s;
+  animation-delay: 1s;
   visibility:hidden;
 }
 
@@ -129,7 +147,7 @@
   animation-name: slideInDown;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-delay: .5s;
+  animation-delay: 1s;
   visibility:hidden;
 }
 
