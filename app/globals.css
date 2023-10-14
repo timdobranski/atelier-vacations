@@ -4,3 +4,51 @@
   font-weight: normal;
   font-style: normal;
 }
+
+#app {
+  background: linear-gradient(to bottom, rgb(0, 191, 255), rgb(178, 255, 178));
+  box-sizing: border-box;
+  margin: 0;
+  background-repeat:no-repeat;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#title {
+  position: absolute;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: .5rem;
+  pointer-events: none;
+  font-family: 'Future';
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  visibility: hidden;
+
+}
+
+@media(max-width: 768px) {
+  #title {
+    font-size: 2.5rem;
+    top: 0%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0%;
+      visibility: hidden;
+  }
+  to {
+      opacity: 1;
+      visibility: visible;
+  }
+}

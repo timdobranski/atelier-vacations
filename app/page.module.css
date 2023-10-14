@@ -1,32 +1,25 @@
-.bottomDiv {
+.main {
+  box-sizing: border-box;
+  /* border: solid red 4px; */
   width: 100%;
-  height: 900px;
+  height: 100vh;
+  background: transparent;
+}
+.bottomDiv {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
   position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  /* border: solid red 4px; */
-  background: linear-gradient(to bottom, rgb(0, 191, 255), rgb(178, 255, 178));
-}
-#title {
-  position: absolute;
 
-  text-align: center;
-  font-size: 3rem;
-  font-weight: bold;
-  color: white;
-  text-shadow: 2px 2px 2px black;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: .5rem;
-  pointer-events: none;
-  /* box-shadow: 3px 3px 41px 32px rgba(0,0,0,0.75); */
+  background: transparent;
 }
 .shard {
   width: 6%;
   height: 55%;
-  /* background-size: auto 50%; */
   transform: skewY(-25deg);
   margin: .5rem;
   overflow: hidden;
@@ -72,7 +65,6 @@
 .shard8 {
   height: 42%;
 }
-
 .shard .img {
   position: absolute;
   transform: skewY(25deg);
@@ -123,17 +115,6 @@
   }
 }
 
-@keyframes fadeIn {
-  from {
-      opacity: 0%;
-      visibility: hidden;
-  }
-  to {
-      opacity: 1;
-      visibility: visible;
-  }
-}
-
 .shard1, .shard3, .shard5, .shard7 {
   animation-name: slideInUp;
   animation-duration: 1s;
@@ -150,13 +131,85 @@
   visibility:hidden;
 }
 
-#title {
-  font-family: 'Future';
-  animation-name: fadeIn;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  animation-delay: 1.5s;
-  visibility: hidden;
+
+@media(max-width: 768px) {
+  .bottomDiv {
+    margin-top: 15vh;
+    height: 40vh;
+    background: transparent;
+    justify-content: center;
+    padding: 0;
+  }
+  .shard {
+    width: 10%;
+    transform: skewY(-25deg);
+    margin: .25rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+  /* .shard1 {
+    height: 22.5%;
+  }
+  .shard2 {
+    height: 30%;
+  }
+  .shard3 {
+    height: 29%;
+  }
+  .shard4 {
+    height: 37.5%;
+  }
+  .shard5 {
+    height: 32.5%;
+  }
+  .shard6 {
+    height: 29%;
+  }
+  .shard7 {
+    height: 31%;
+  }
+  .shard8 {
+    height: 21%;
+  } */
+  .shard1 .img {
+    background-position: 25vw 50%;
+  }
+  .shard2 .img {
+    background-position: 18.5vw 50%;
+  }
+  .shard3 .img {
+    background-position: 12vw 50%;
+  }
+  .shard4 .img {
+    background-position: 5.5vw 50%;
+  }
+  .shard5 .img {
+    background-position: -1vw 50%;
+  }
+  .shard6 .img {
+    background-position: -7.5vw 50%;
+  }
+  .shard7 .img {
+    background-position: -14vw 50%
+  }
+  .shard8 .img {
+    background-position: -20.5vw 50%;
+  }
+  .img {
+    position: relative;
+    transform: skewY(-25deg);
+    background-size: 170%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    padding: 0;
+    height: 90vh;
+    width: 80vw;
+  }
 }
 
 

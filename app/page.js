@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={`${styles.bottomDiv}`}>
-        <h1 id={styles.title}>PARKWAY ACADEMY</h1>
         <div className={`${styles.shard} ${styles.shard1}`}><div className={styles.img}></div></div>
         <div className={`${styles.shard} ${styles.shard2}`}><div className={styles.img}></div></div>
         <div className={`${styles.shard} ${styles.shard3}`}><div className={styles.img}></div></div>
