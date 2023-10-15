@@ -23,7 +23,7 @@
   animation-name: fadeIn;
   animation-duration: 3s;
   animation-fill-mode: forwards;
-  animation-delay: 1.5s;
+  animation-delay: .5s;
   visibility: hidden;
 }
 .bottomDiv {
@@ -152,7 +152,7 @@
   animation-name: slideInUp;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-delay: 1s;
+  /* animation-delay: 1s; */
   visibility:hidden;
 }
 
@@ -160,7 +160,7 @@
   animation-name: slideInDown;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-delay: 1s;
+  /* animation-delay: 1s; */
   visibility:hidden;
 }
 
