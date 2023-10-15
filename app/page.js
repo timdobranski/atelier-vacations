@@ -8,7 +8,7 @@ export default function Home() {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
-    const imagePath = '/palms.png';
+    const imagePath = '/palms.jpg';
     const img = new Image();
     img.src = imagePath;
 
