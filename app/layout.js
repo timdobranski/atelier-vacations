@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body id='app'>
-      <h1 id={'title'}>PARKWAY ACADEMY</h1>
+      {/* <h1 id={'title'}>PARKWAY ACADEMY</h1> */}
         {children}
         </body>
     </html>

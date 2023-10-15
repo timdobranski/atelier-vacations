@@ -6,6 +6,26 @@
   background: transparent;
 
 }
+#title{
+  position: absolute;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  padding: .5rem;
+  pointer-events: none;
+  font-family: 'Future';
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  visibility: hidden;
+}
 .bottomDiv {
   box-sizing: border-box;
   width: 100%;
@@ -116,6 +136,16 @@
       visibility: visible;
   }
 }
+@keyframes fadeIn {
+  from {
+      opacity: 0%;
+      visibility: hidden;
+  }
+  to {
+      opacity: 1;
+      visibility: visible;
+  }
+}
 
 .shard1, .shard3, .shard5, .shard7 {
   animation-name: slideInUp;
@@ -135,8 +165,16 @@
 
 
 @media(max-width: 768px) {
+  #title{
+    font-size: 10vw;
+    top:0;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 1rem;
+  }
+
   .bottomDiv {
-    margin-top: 15vh;
+    margin-top: 30vw;
     height: 40vh;
     background: transparent;
     justify-content: center;
