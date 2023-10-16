@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Header />
-      <h1 id={styles.title}>PARKWAY ACADEMY</h1>
+      <h1 id={styles.title}>ATELIER VACATIONS</h1>
       <div className={`${styles.bottomDiv}`}>
         <div className={`${styles.shard} ${styles.shard1}`}><div className={styles.img}  alt='shard' priority='true'></div></div>
         <div className={`${styles.shard} ${styles.shard2}`}><div className={styles.img}  alt='shard' priority='true'></div></div>
