@@ -14,6 +14,7 @@
   text-shadow: 2px 2px 2px black;
   top:50%;
   left: 50%;
+  margin-top: -1.75vw;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
